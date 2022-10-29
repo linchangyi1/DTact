@@ -1,0 +1,52 @@
+camera_setting:
+  camera_channel: 2
+  resolution_list: # width, height
+    - - 320
+      - 240
+    - - 640
+      - 480
+    - - 800
+      - 600
+    - - 1280
+      - 720
+  resolution_option: 2 #[320,240] [640,480] [800,600] [1280,720]
+  fps: 60
+
+camera_calibration:
+  chessboard_images_path: ./images/camera_calibration_images
+  cam_clb_img_number: 10
+  prefix: calibration
+  image_format: png
+  square_size: 3.0
+  corners_row: 8
+  corners_column: 11
+  parameter_saving_file: /camera_parameters.yaml
+  optimization: False
+
+sensor_setting:
+  crop_size:
+    - 580 # row
+    - 580 # column
+  surface_center:
+    - 300 # row
+    - 420 # column
+  Pixmm: 0.037967
+
+sensor_calibration:
+  calibration_images_path: ./images/sensor_calibration_images
+  ref_directory: /ref
+  sample_directory: /sample
+  ref_number: 1
+  sample_number: 1
+  BallRad: 4.0
+  circle_detect_gray: 3
+  show_circle_detection: True
+  GRAY_Height_list: /GRAY_Height_list.npy
+
+sensor_reconstruction:
+  lighting_threshold: 2
+  kernel_list:
+    - 7
+    - 7
+  contact_gray_base: 20
+  depth_k: 160
