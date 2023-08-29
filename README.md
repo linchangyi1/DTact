@@ -1,4 +1,3 @@
 # DTact
 The open source of [DTact](https://sites.google.com/view/dtact-sensor).
-
-Welcome to use the open source files.
+Please check our lastest work [9DTact](https://github.com/linchangyi1/9DTact).
